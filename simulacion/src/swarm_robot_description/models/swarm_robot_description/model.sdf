@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="swarm_robot_description">
+    <link name="base_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.06 0 0 0</pose>
+        <mass>1.66</mass>
+        <inertia>
+          <ixx>0.009</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.009</iyy>
+          <iyz>0</iyz>
+          <izz>0.015</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_visual">
+        <pose>0 0 0.02 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.10</radius>
+            <length>0.06</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.65 0.24 0.24 1</ambient>
+          <diffuse>0.65 0.24 0.24 1</diffuse>
+        </material>
+      </visual>
+      <collision name="base_collision">
+        <pose>0 0 0.02 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.10</radius>
+            <length>0.06</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

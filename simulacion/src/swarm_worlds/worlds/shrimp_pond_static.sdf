@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <world name="shrimp_pond_static">
+    <!-- Stability mode for controller tuning: neutral gravity -->
+    <gravity>0 0 0</gravity>
+    <atmosphere type="adiabatic"/>
+    <!-- Corriente ambiental muy suave para dar dinámica mínima -->
+    <wind>
+      <linear_velocity>0.0 0.0 0.0</linear_velocity>
+    </wind>
+
+    <physics name="default_physics" default="true" type="dart">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <scene>
+      <ambient>0.55 0.62 0.68 1</ambient>
+      <background>0.78 0.86 0.92 1</background>
+      <shadows>true</shadows>
+      <fog>
+        <color>0.80 0.88 0.93 1</color>
+        <type>linear</type>
+        <start>40</start>
+        <end>250</end>
+        <density>0.005</density>
+      </fog>
+    </scene>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 20 0 0 0</pose>
+      <diffuse>0.95 0.95 0.90 1</diffuse>
+      <specular>0.20 0.20 0.20 1</specular>
+      <direction>-0.35 0.15 -0.92</direction>
+    </light>
+
+    <!-- Suelo general del mundo -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>1000 1000</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.42 0.37 0.30 1</ambient>
+            <diffuse>0.46 0.40 0.33 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Fondo de la camaronera (profundidad aprox. 1.2 m) -->
+    <model name="pond_bottom">
+      <static>true</static>
+      <pose>0 0 -1.2 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>80 40 0.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.36 0.30 0.22 1</ambient>
+            <diffuse>0.40 0.33 0.25 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Superficie de agua estática, sin olas -->
+    <model name="water_surface">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>80 40</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.10 0.45 0.56 0.55</ambient>
+            <diffuse>0.12 0.58 0.66 0.55</diffuse>
+            <specular>0.08 0.08 0.08 1.0</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Bordes de tierra de la camaronera -->
+    <model name="pond_border_north">
+      <static>true</static>
+      <pose>0 20.5 -0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>82 1 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.52 0.42 0.30 1</ambient>
+            <diffuse>0.58 0.47 0.34 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="pond_border_south">
+      <static>true</static>
+      <pose>0 -20.5 -0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>82 1 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.52 0.42 0.30 1</ambient>
+            <diffuse>0.58 0.47 0.34 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="pond_border_east">
+      <static>true</static>
+      <pose>40.5 0 -0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 42 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.52 0.42 0.30 1</ambient>
+            <diffuse>0.58 0.47 0.34 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="pond_border_west">
+      <static>true</static>
+      <pose>-40.5 0 -0.5 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 42 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.52 0.42 0.30 1</ambient>
+            <diffuse>0.58 0.47 0.34 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Plugins base Gazebo Harmonic -->
+    <plugin filename="libgz-sim-physics-system.so" name="gz::sim::systems::Physics"/>
+    <plugin filename="libgz-sim-user-commands-system.so" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="libgz-sim-scene-broadcaster-system.so" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="libgz-sim-apply-link-wrench-system.so" name="gz::sim::systems::ApplyLinkWrench"/>
+
+    <!-- Buoyancy disabled in stability mode -->
+
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>32 -26 18 0.0 0.45 2.35</pose>
+      </camera>
+    </gui>
+  </world>
+</sdf>

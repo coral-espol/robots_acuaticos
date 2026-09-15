@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="CarcasaURDF">
+  <!--
+    PROXY FÍSICO ESTABLE:
+    - Un solo cuerpo rígido para dinámica (base_link)
+    - Todos los STL se mantienen como visuales en base_link
+  -->
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="20.0" />
+      <inertia ixx="2.0" ixy="0.0" ixz="0.0" iyy="2.0" iyz="0.0" izz="3.0" />
+    </inertial>
+
+    <!-- Visuales originales -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/base_link.STL" />
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/foam_link.STL" />
+      </geometry>
+      <material name="foam_material">
+        <color rgba="0.55 0.20 0.75 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/bottomBase_link.STL" />
+      </geometry>
+      <material name="bottom_material">
+        <color rgba="0.20 0.85 0.90 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/leftBase_link.STL" />
+      </geometry>
+      <material name="side_material">
+        <color rgba="0.0 0.0 0.0 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/rightBase_link.STL" />
+      </geometry>
+      <material name="side_material_r">
+        <color rgba="0.0 0.0 0.0 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/motor_left_link.STL" />
+      </geometry>
+      <material name="motor_material_l">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://swarm_robot_description_model3/meshes/motor_right_link.STL" />
+      </geometry>
+      <material name="motor_material_r">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <!-- Proxy de colisión robusto -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.16" length="0.18" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="base_link">
+    <velocity_decay>
+      <linear>30.0</linear>
+      <angular>400.0</angular>
+    </velocity_decay>
+  </gazebo>
+
+  <!-- Control cinemático estable (Gazebo Harmonic: VelocityControl) -->
+  <gazebo>
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl" />
+  </gazebo>
+
+  <!-- VelocityControl NO publica odometría por sí solo: sin este plugin,
+       /model/<robot>/odometry nunca tiene publicador y cualquier nodo que
+       dependa solo de él (p. ej. el data logger) no recibe nada, aunque el
+       robot navegue bien gracias al respaldo de TF dinámico. -->
+  <gazebo>
+    <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <dimensions>2</dimensions>
+      <odom_publish_frequency>20</odom_publish_frequency>
+    </plugin>
+  </gazebo>
+</robot>

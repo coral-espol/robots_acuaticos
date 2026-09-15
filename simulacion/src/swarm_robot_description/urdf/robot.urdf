@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Azimuth_bot original design version -->
+<robot
+  name="AzimuthV3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="5.6E-06 9.8387E-06 0.059695"
+        rpy="0 0 0" />
+      <mass
+        value="1.6608" />
+      <inertia
+        ixx="0.0092313"
+        ixy="-1.1512E-09"
+        ixz="4.3295E-08"
+        iyy="0.0092314"
+        iyz="-1.1098E-09"
+        izz="0.015172" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.6549 0.2392 0.2392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.10" length="0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.055" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.22 0.16 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Pod_link">
+    <inertial>
+      <origin
+        xyz="-0.020969 -0.00046657 -0.070974"
+        rpy="0 0 0" />
+      <mass
+        value="0.14581" />
+      <inertia
+        ixx="4.8483E-05"
+        ixy="-6.6571E-07"
+        ixz="-5.2275E-06"
+        iyy="7.8386E-05"
+        iyz="-1.1631E-07"
+        izz="6.0523E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Pod_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.16"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Pod_Base_joint" type="continuous">
+    <origin xyz="0 0 -0.021064" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="Pod_link"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.2" friction="0.1"/>
+  </joint>
+  <link
+    name="Thruster_link">
+    <inertial>
+      <origin
+        xyz="0.00016255 -7.3738E-06 0.0073041"
+        rpy="0 0 0" />
+      <mass
+        value="0.00098034" />
+      <inertia
+        ixx="4.6405E-08"
+        ixy="-1.131E-12"
+        ixz="4.7907E-10"
+        iyy="4.6394E-08"
+        iyz="-2.1687E-11"
+        izz="6.7921E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Thruster_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.025" length="0.12"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Thruster_Pod_joint"
+    type="continuous">
+    <origin
+      xyz="-0.083823 -0.0018651 -0.08"
+      rpy="1.5698 0 -1.5708" />
+    <parent
+      link="Pod_link" />
+    <child
+      link="Thruster_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Sensor1_link">
+    <inertial>
+      <origin
+        xyz="0 -0.0075 -2.7756E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0073631" />
+      <inertia
+        ixx="4.2568E-07"
+        ixy="1.4062E-23"
+        ixz="-1.8994E-23"
+        iyy="5.7524E-07"
+        iyz="-6.5575E-23"
+        izz="4.2568E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Sensor1_Base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.12 0.035776"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Sensor1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Sensor2_link">
+    <inertial>
+      <origin
+        xyz="-1.7347E-18 0.0075 2.7756E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0073631" />
+      <inertia
+        ixx="4.2568E-07"
+        ixy="-1.4889E-23"
+        ixz="-3.2744E-25"
+        iyy="5.7524E-07"
+        iyz="-5.0502E-23"
+        izz="4.2568E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Sensor2_Base_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.12 0.035776"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Sensor2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Sensor3_link">
+    <inertial>
+      <origin
+        xyz="-0.0075 1.7347E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0073631" />
+      <inertia
+        ixx="5.7524E-07"
+        ixy="-9.9262E-24"
+        ixz="-6.0641E-23"
+        iyy="4.2568E-07"
+        iyz="-5.0285E-23"
+        izz="4.2568E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Sensor3_Base_joint"
+    type="fixed">
+    <origin
+      xyz="0.12 0 0.035776"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Sensor3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Sensor4_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0073631" />
+      <inertia
+        ixx="5.7524E-07"
+        ixy="0"
+        ixz="0"
+        iyy="4.2568E-07"
+        iyz="0"
+        izz="4.2568E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://swarm_robot_description/meshes/Sensor4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Sensor4_Base_joint"
+    type="fixed">
+    <origin
+      xyz="-0.12 0 0.035776"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Sensor4_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

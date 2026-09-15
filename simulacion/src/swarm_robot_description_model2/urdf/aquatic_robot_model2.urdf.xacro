@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AquaticRobotModel2">
+
+<xacro:arg name="prefix" default=""/>
+<xacro:property name="pkg" value="swarm_robot_description_model2"/>
+
+<!-- BASE LINK -->
+<link name="base_link">
+  <inertial>
+    <origin xyz="3.5033E-05 -0.00012248 0.0036387" rpy="0 0 0"/>
+    <mass value="10.416"/>
+    <inertia 
+      ixx="0.037767" ixy="3.4516E-06" ixz="5.8428E-08"
+      iyy="0.11162" iyz="-0.00018002" izz="0.1293"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://swarm_robot_description_model2/meshes/base_link.STL"/>
+    </geometry>
+    <material name="base_material">
+      <color rgba="0.8 0.8 0.8 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.15" length="0.1"/>
+    </geometry>
+  </collision>
+</link>
+
+<!-- LEFT MOTOR LINK -->
+<link name="motor_izq_link">
+  <inertial>
+    <origin xyz="-7.6704E-10 5.0396E-05 0.0090544" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia 
+      ixx="0.0001" ixy="0" ixz="0"
+      iyy="0.0001" iyz="0" izz="0.0001"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://swarm_robot_description_model2/meshes/motor_izq_link.STL"/>
+    </geometry>
+    <material name="motor_material">
+      <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <sphere radius="0.03"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="motor_izq_joint" type="continuous">
+  <origin xyz="0.00023088 0.17753 -0.0789" rpy="1.5708 0 1.5708"/>
+  <parent link="base_link"/>
+  <child link="motor_izq_link"/>
+  <axis xyz="0 0 1"/>
+  <limit effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0"/>
+</joint>
+
+<!-- RIGHT MOTOR LINK -->
+<link name="motor_der_link">
+  <inertial>
+    <origin xyz="-7.6704E-10 5.0396E-05 -0.0031306" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia 
+      ixx="0.0001" ixy="0" ixz="0"
+      iyy="0.0001" iyz="0" izz="0.0001"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://swarm_robot_description_model2/meshes/motor_der_link.STL"/>
+    </geometry>
+    <material name="motor_material">
+      <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <sphere radius="0.03"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="motor_der_joint" type="continuous">
+  <origin xyz="0.005363 -0.17753 -0.0789" rpy="1.5708 0 1.5708"/>
+  <parent link="base_link"/>
+  <child link="motor_der_link"/>
+  <axis xyz="0 0 1"/>
+  <limit effort="100" velocity="100"/>
+  <dynamics damping="0.1" friction="0"/>
+</joint>
+
+<!-- GAZEBO PLUGINS FOR GAZEBO HARMONIC -->
+
+<!-- Gazebo colors and materials -->
+<gazebo reference="base_link">
+  <material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="motor_izq_link">
+  <material>Gazebo/DarkGrey</material>
+  <gravity>false</gravity>
+</gazebo>
+
+<gazebo reference="motor_der_link">
+  <material>Gazebo/DarkGrey</material>
+  <gravity>false</gravity>
+</gazebo>
+
+<!-- Disable gravity to simulate floating in water -->
+<gazebo reference="base_link">
+  <gravity>false</gravity>
+</gazebo>
+
+<!-- Hydrodynamics Plugin DISABLED - causing ODE issues -->
+<!--
+<gazebo>
+  <plugin name="gz::sim::systems::Hydrodynamics" filename="libgz-sim-hydrodynamics-system.so">
+    <link_name>base_link</link_name>
+    <water_density>1000</water_density>
+    <xDotU>-10.0</xDotU>
+    <yDotV>-10.0</yDotV>
+    <zDotW>-10.0</zDotW>
+    <kDotP>-10.0</kDotP>
+    <mDotQ>-10.0</mDotQ>
+    <nDotR>-10.0</nDotR>
+  </plugin>
+</gazebo>
+-->
+
+</robot>

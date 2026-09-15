@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>swarm_bringup</name>
+  <version>0.0.1</version>
+  <description>Swarm bringup package</description>
+  <maintainer email="emmanuel4590@gmail.com">emmons6411</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>swarm_robot_description</depend>
+  <depend>swarm_robot_description_model2</depend>
+  <depend>swarm_robot_description_model3</depend>
+  <depend>swarm_worlds</depend>
+  <depend>swarm_control</depend>
+  <depend>swarm_control_model2</depend>
+  <depend>swarm_control_model3</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

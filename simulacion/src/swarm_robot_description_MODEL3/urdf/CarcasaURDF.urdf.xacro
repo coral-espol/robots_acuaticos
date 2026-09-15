@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="CarcasaURDF">
+  <xacro:include filename="$(find swarm_robot_description_model3)/urdf/CarcasaURDF.urdf"/>
+</robot>

@@ -1,0 +1,15 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    motor_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+motor_controller:
+  ros__parameters:
+    joints:
+      - motor_izq_joint
+      - motor_der_joint

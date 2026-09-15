@@ -1,0 +1,16 @@
+CLAUDE.md
+.vscode/
+build/
+install/
+log/
+simulacion/build/
+simulacion/install/
+simulacion/log/
+simulacion/.vscode/
+simulacion/CLAUDE.md
+simulacion/data/*.csv
+simulacion/data/*_summary.txt
+simulacion/**/__pycache__/
+simulacion/**/*.pyc
+*.pyc
+.DS_Store

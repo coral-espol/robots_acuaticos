@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RobotAcuaticoVROS2Urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.5033E-05 -0.00012248 0.0036387"
+        rpy="0 0 0" />
+      <mass
+        value="10.416" />
+      <inertia
+        ixx="0.037767"
+        ixy="3.4516E-06"
+        ixz="5.8428E-08"
+        iyy="0.11162"
+        iyz="-0.00018002"
+        izz="0.1293" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotAcuaticoVROS2Urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotAcuaticoVROS2Urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="motor_izq_link">
+    <inertial>
+      <origin
+        xyz="-7.6704E-10 5.0396E-05 0.0090544"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.0001"
+        ixy="0"
+        ixz="0"
+        iyy="0.0001"
+        iyz="0"
+        izz="0.0001" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotAcuaticoVROS2Urdf/meshes/motor_izq_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_izq_joint"
+    type="continuous">
+    <origin
+      xyz="0.00023088 0.17753 -0.0789"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="motor_izq_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0" />
+  </joint>
+  <link
+    name="motor_der_link">
+    <inertial>
+      <origin
+        xyz="-7.6704E-10 5.0396E-05 -0.0031306"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.0001"
+        ixy="0"
+        ixz="0"
+        iyy="0.0001"
+        iyz="0"
+        izz="0.0001" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RobotAcuaticoVROS2Urdf/meshes/motor_der_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_der_joint"
+    type="continuous">
+    <origin
+      xyz="0.005363 -0.17753 -0.0789"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="motor_der_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0" />
+  </joint>
+</robot>
