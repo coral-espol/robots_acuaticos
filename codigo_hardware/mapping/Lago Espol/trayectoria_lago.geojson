@@ -1,0 +1,1442 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -79.96302,
+                        -2.145557
+                    ],
+                    [
+                        -79.96302,
+                        -2.14557
+                    ],
+                    [
+                        -79.96301,
+                        -2.145565
+                    ],
+                    [
+                        -79.96301,
+                        -2.145567
+                    ],
+                    [
+                        -79.96301,
+                        -2.145571
+                    ],
+                    [
+                        -79.96301,
+                        -2.145564
+                    ],
+                    [
+                        -79.96301,
+                        -2.145572
+                    ],
+                    [
+                        -79.963,
+                        -2.145571
+                    ],
+                    [
+                        -79.963,
+                        -2.145574
+                    ],
+                    [
+                        -79.963,
+                        -2.145576
+                    ],
+                    [
+                        -79.963,
+                        -2.145582
+                    ],
+                    [
+                        -79.96299,
+                        -2.145576
+                    ],
+                    [
+                        -79.96299,
+                        -2.145576
+                    ],
+                    [
+                        -79.96299,
+                        -2.145585
+                    ],
+                    [
+                        -79.963,
+                        -2.145586
+                    ],
+                    [
+                        -79.96301,
+                        -2.145591
+                    ],
+                    [
+                        -79.963,
+                        -2.14559
+                    ],
+                    [
+                        -79.96299,
+                        -2.145584
+                    ],
+                    [
+                        -79.96299,
+                        -2.145577
+                    ],
+                    [
+                        -79.96299,
+                        -2.145574
+                    ],
+                    [
+                        -79.963,
+                        -2.145576
+                    ],
+                    [
+                        -79.963,
+                        -2.145577
+                    ],
+                    [
+                        -79.963,
+                        -2.145577
+                    ],
+                    [
+                        -79.96299,
+                        -2.145578
+                    ],
+                    [
+                        -79.96298,
+                        -2.145576
+                    ],
+                    [
+                        -79.96298,
+                        -2.145577
+                    ],
+                    [
+                        -79.96297,
+                        -2.145577
+                    ],
+                    [
+                        -79.96296,
+                        -2.14558
+                    ],
+                    [
+                        -79.96295,
+                        -2.145586
+                    ],
+                    [
+                        -79.96296,
+                        -2.145588
+                    ],
+                    [
+                        -79.96296,
+                        -2.145595
+                    ],
+                    [
+                        -79.96295,
+                        -2.145598
+                    ],
+                    [
+                        -79.96294,
+                        -2.145593
+                    ],
+                    [
+                        -79.96295,
+                        -2.145595
+                    ],
+                    [
+                        -79.96295,
+                        -2.145583
+                    ],
+                    [
+                        -79.96295,
+                        -2.145586
+                    ],
+                    [
+                        -79.96296,
+                        -2.145589
+                    ],
+                    [
+                        -79.96295,
+                        -2.145579
+                    ],
+                    [
+                        -79.96294,
+                        -2.145559
+                    ],
+                    [
+                        -79.96295,
+                        -2.145545
+                    ],
+                    [
+                        -79.96296,
+                        -2.145535
+                    ],
+                    [
+                        -79.96297,
+                        -2.14554
+                    ],
+                    [
+                        -79.96296,
+                        -2.145552
+                    ],
+                    [
+                        -79.96295,
+                        -2.145558
+                    ],
+                    [
+                        -79.96296,
+                        -2.145563
+                    ],
+                    [
+                        -79.96297,
+                        -2.145569
+                    ],
+                    [
+                        -79.96296,
+                        -2.145576
+                    ],
+                    [
+                        -79.96297,
+                        -2.145575
+                    ],
+                    [
+                        -79.96296,
+                        -2.145571
+                    ],
+                    [
+                        -79.96296,
+                        -2.145571
+                    ],
+                    [
+                        -79.96296,
+                        -2.145572
+                    ],
+                    [
+                        -79.96296,
+                        -2.145575
+                    ],
+                    [
+                        -79.96296,
+                        -2.14558
+                    ],
+                    [
+                        -79.96297,
+                        -2.145581
+                    ],
+                    [
+                        -79.96297,
+                        -2.145588
+                    ],
+                    [
+                        -79.96297,
+                        -2.145596
+                    ],
+                    [
+                        -79.96297,
+                        -2.145612
+                    ],
+                    [
+                        -79.96297,
+                        -2.145617
+                    ],
+                    [
+                        -79.96298,
+                        -2.145618
+                    ],
+                    [
+                        -79.96298,
+                        -2.145616
+                    ],
+                    [
+                        -79.96299,
+                        -2.145617
+                    ],
+                    [
+                        -79.96299,
+                        -2.145626
+                    ],
+                    [
+                        -79.96299,
+                        -2.145632
+                    ],
+                    [
+                        -79.96299,
+                        -2.145634
+                    ],
+                    [
+                        -79.96299,
+                        -2.145626
+                    ],
+                    [
+                        -79.96298,
+                        -2.145633
+                    ],
+                    [
+                        -79.96298,
+                        -2.145627
+                    ],
+                    [
+                        -79.96299,
+                        -2.145622
+                    ],
+                    [
+                        -79.963,
+                        -2.145613
+                    ],
+                    [
+                        -79.96299,
+                        -2.145604
+                    ],
+                    [
+                        -79.96299,
+                        -2.145586
+                    ],
+                    [
+                        -79.963,
+                        -2.145574
+                    ],
+                    [
+                        -79.963,
+                        -2.145576
+                    ],
+                    [
+                        -79.96301,
+                        -2.145579
+                    ],
+                    [
+                        -79.96301,
+                        -2.145577
+                    ]
+                ]
+            },
+            "properties": {
+                "nombre": "Trayectoria GPS",
+                "total_puntos": 75
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96302,
+                    -2.145557
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96302,
+                    -2.14557
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:08"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145565
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:34"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145567
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:40"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145571
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:47"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145564
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:18:53"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145572
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145571
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:06"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145574
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:13"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:20"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145582
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:27"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:34"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:41"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145585
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:48"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145586
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:19:54"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145591
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.14559
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:07"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145584
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:13"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:20"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145574
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:26"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:33"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:39"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:45"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145578
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:52"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:20:58"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:04"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:11"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.14558
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:17"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145586
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:23"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145588
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:30"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145595
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:36"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145598
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:42"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96294,
+                    -2.145593
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:49"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145595
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:21:55"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145583
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145586
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:08"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145589
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:14"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145579
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:21"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96294,
+                    -2.145559
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:27"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145545
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:34"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145535
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:40"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.14554
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:46"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145552
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:53"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96295,
+                    -2.145558
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:22:59"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145563
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:06"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145569
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:12"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:18"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145575
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:25"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145571
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:31"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145571
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:38"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145572
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:44"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.145575
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:51"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96296,
+                    -2.14558
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:23:57"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145581
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145588
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:10"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145596
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:16"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145612
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:23"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96297,
+                    -2.145617
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:29"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145618
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:36"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145616
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:42"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145617
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:48"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145626
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:24:55"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145632
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145634
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:08"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145626
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:14"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145633
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:21"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96298,
+                    -2.145627
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:27"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145622
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:34"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145613
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:41"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145604
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:47"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96299,
+                    -2.145586
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:25:54"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145574
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:26:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.963,
+                    -2.145576
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:26:07"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145579
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:26:13"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96301,
+                    -2.145577
+                ]
+            },
+            "properties": {
+                "temperatura": 0.0,
+                "ph": 23.55,
+                "tiempo": "2026-08-20 14:26:20"
+            }
+        }
+    ]
+}
